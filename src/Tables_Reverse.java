@@ -1,13 +1,12 @@
 import java.util.Scanner;
-public class Factorial {
+
+public class Tables_Reverse {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number");
         int n = sc.nextInt();
-        int f=1;
-        for (int i = 1; i <= n; i++) {
-            f=f*i;
+        for (int i = 10; i >= 1; i--) {
+            System.out.println(n + "*" + i + "=" + n * i);
         }
-        System.out.println("Factorial of "+ n +"="+ f);
     }
 }
